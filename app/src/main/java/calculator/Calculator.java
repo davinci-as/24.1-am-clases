@@ -1,9 +1,19 @@
 package calculator;
 
 public class Calculator {
-    //TODO: feat: agregar metodo de suma de dos enteros
+        public int sumar(int n1, int n2){
+            int resultado;
+            
+            resultado = n1 + n2;
 
-    //TODO: feat: agregar metodo de multiplicacion de dos enteros
+            return resultado;
+        }
+        public int multiplicar(int n1, int n2){
+            int resultado;
+            
+            resultado = n1 * n2;
+            return resultado;
+        }
 
     public int restar(int primero, int segundo ) {
         return primero - segundo;
