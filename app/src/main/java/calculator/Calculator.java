@@ -9,5 +9,8 @@ public class Calculator {
         return primero - segundo;
     }
 
-    //TODO: feat: agregar metodo de division de dos enteros
+    public float  dividir(int primero, int segundo) {
+        if(segundo == 0) return -1;
+        return primero / segundo;
+    }
 }

@@ -16,5 +16,7 @@ public class MainActivity extends AppCompatActivity {
         Calculator calculator = new Calculator();
         int resultadoResta = calculator.restar(2,1);
         // TODO: feat: imprimir resultado
+        float resultadoDivision = calculator.dividir(2,1);
+        // TODO: feat: imprimir resultado
     }
 }
