@@ -23,4 +23,5 @@ public class Calculator {
         if(segundo == 0) return -1;
         return primero / segundo;
     }
+
 }
