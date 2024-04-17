@@ -40,8 +40,12 @@ public class MainActivity extends AppCompatActivity {
         TextView displayText = findViewById(R.id.displayText);
 
         String concatenado = (String) displayText.getText();
+        String textoBoton = (String) boton.getText();
+        if(textoBoton.equalsIgnoreCase("=")) {
+            textoBoton += "\n";
+        }
 
-        displayText.setText(concatenado + boton.getText());
+        displayText.setText(concatenado + textoBoton);
     }
 
     public void delete(View view) {
