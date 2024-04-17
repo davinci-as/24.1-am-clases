@@ -143,6 +143,7 @@
                         android:id="@+id/n_button_del"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:onClick="delete"
                         android:text="DEL" />
 
                     <Button

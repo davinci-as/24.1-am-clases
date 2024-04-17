@@ -44,6 +44,13 @@ public class MainActivity extends AppCompatActivity {
         displayText.setText(concatenado + boton.getText());
     }
 
+    public void delete(View view) {
+        Log.i("app", "funciona");
+        TextView displayText = findViewById(R.id.displayText);
+
+        displayText.setText("");
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
