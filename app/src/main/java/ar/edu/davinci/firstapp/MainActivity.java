@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import calculator.Calculator;
@@ -31,6 +32,23 @@ public class MainActivity extends AppCompatActivity {
         Log.i("app", "funciona");
         TextView displayText = findViewById(R.id.displayText);
         displayText.setText(R.string.dividir);
+    }
+
+    public void escribir(View view) {
+        Log.i("app", "funciona");
+        Button boton = (Button)view;
+        TextView displayText = findViewById(R.id.displayText);
+
+        String concatenado = (String) displayText.getText();
+
+        displayText.setText(concatenado + boton.getText());
+    }
+
+    public void delete(View view) {
+        Log.i("app", "funciona");
+        TextView displayText = findViewById(R.id.displayText);
+
+        displayText.setText("");
     }
 
     @Override
